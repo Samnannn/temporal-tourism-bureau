@@ -2,7 +2,7 @@
 
 **Submission for Autumn of Code — 24-Hour Website Design Competition**
 Prompt: *Time Traveler's Tourism Board*
-Team: Participant 1 & Participant 2
+Team: Mohammad Shadab & Samnan
 
 A tourism board for destinations across time, presented as the public-facing website of a fictional government department: the **Temporal Tourism Bureau**, est. 2087. The tone is deadpan officialdom; the visual language is engraved era plates, bone paper, oxblood and burnt-gold ink, passport stamps and security-print microtext on a Swiss grid.
 
