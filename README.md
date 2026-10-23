@@ -107,5 +107,5 @@ No frameworks, no bundler, no backend, no cookies or storage. Classic scripts ar
 - Skip link, landmark structure, labelled form controls, visible focus styles.
 - Step changes and errors are announced (`role="alert"`, `aria-current`, `aria-pressed`), and focus moves to the first invalid field.
 - Scroll reveals and the ticker respect `prefers-reduced-motion`.
-- Layout is checked at 1440, 1024, 768 and 390 px; print styles produce a clean visa/packing sheet.
+- Layout is checked at 1440, 1024, 768, 430, 390, 360 and 320 px; print styles produce a clean visa/packing sheet.
 - The site degrades gracefully without JavaScript: all editorial content, prices and rules are in the HTML; only the interactive tallies and booking flow require it.
