@@ -18,7 +18,7 @@ No build step, no dependencies, no server required.
 For a local server instead:
 
 ```bash
-cd Participant1_Participant2_AutumnOfCodeDesignCompetition
+cd MohammadShadab_Samnan_AutumnOfCodeDesignCompetition
 python -m http.server 8000
 # then visit http://localhost:8000
 ```
