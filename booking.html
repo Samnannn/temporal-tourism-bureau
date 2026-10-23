@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visa &amp; Booking — Temporal Tourism Bureau</title>
+<meta name="description" content="Apply for a visa in four steps: choose an era, a party and class of passage, file your details, and review the manifest. Deposits from T 420.">
+<meta name="theme-color" content="#f2eadc">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f2eadc'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23191410'/%3E%3Cpath d='M11 9h10l-4 6 4 7H11l4-7z' fill='none' stroke='%23191410'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300..700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.className += " js";</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <span class="topbar__item"><span class="dot" aria-hidden="true"></span> Bureau Standard Time <b data-clock>00:00:00</b></span>
+    <span class="topbar__item topbar__mid">All twelve corridors open</span>
+    <a class="topbar__item" href="advisories.html"><span class="dot dot--warn" aria-hidden="true"></span> 6 standing advisories</a>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap site-head__in">
+    <a class="brand" href="index.html" aria-label="Temporal Tourism Bureau — home">
+      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor"/>
+        <g class="brand__ring"><circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 2.6" opacity=".55"/></g>
+        <path d="M24 6v5M24 37v5M6 24h5M37 24h5" stroke="currentColor"/>
+        <path d="M18.6 15.6h10.8l-4.4 6.6a1.2 1.2 0 0 0 0 1.4l4.4 6.8H18.6l4.4-6.8a1.2 1.2 0 0 0 0-1.4z" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand__text"><b>Temporal Tourism Bureau</b><em>Est. 2087 · Licence TT-0041</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="destinations.html">Eras</a>
+      <a href="advisories.html">Advisories</a>
+      <a href="packing.html">Packing</a>
+      <a href="souvenirs.html">Souvenirs</a>
+      <a href="diaries.html">Diaries</a>
+      <a href="faq.html">Paradox FAQ</a>
+      <a class="btn btn--solid nav__book" href="booking.html">Book a departure <span class="btn__arr">→</span></a>
+    </nav>
+    <button class="burger" data-burger aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Visa &amp; booking</span></nav>
+      <div class="page-head__row">
+        <div>
+          <p class="eyebrow">Section 04 — Visa &amp; passage</p>
+          <h1 class="display display--sm">Four steps<br><em>to leave the present.</em></h1>
+          <p class="lede">A visa is required for every departure, including the ones already paid for. The application takes about eleven minutes in this timeline, less if you have your registry number to hand.</p>
+        </div>
+        <div class="page-head__aside">
+          <p class="label" style="margin-bottom:.7rem">Filing note</p>
+          <p class="small" style="margin:0">Applications are read in the order filed, backwards. The deposit is 45% of the total and is refundable until the corridor is opened. Inoculations begin fourteen days before departure.</p>
+          <p class="label" style="margin-top:1.2rem">Deposits from <b style="color:var(--ink)">T 420</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--flush">
+    <div class="wrap">
+      <div class="booking-grid">
+
+        <div>
+          <div class="stepper" data-stepper aria-label="Application progress">
+            <div class="stepper__item is-current" aria-current="step"><span class="stepper__n">01</span> Era</div>
+            <div class="stepper__item"><span class="stepper__n">02</span> Party</div>
+            <div class="stepper__item"><span class="stepper__n">03</span> Details</div>
+            <div class="stepper__item"><span class="stepper__n">04</span> Review</div>
+          </div>
+
+          <form id="visa-form" novalidate>
+
+            <section class="step-panel" data-step="1">
+              <p class="step-legend">Step 01 of 04 — Destination</p>
+              <h2 class="step-title">Choose an era.</h2>
+              <p class="step-sub">Eight eras are open for booking. Prices are per traveller and include the guide, the inoculations, the field screen where relevant, and the return.</p>
+              <div class="choices" data-era-choices></div>
+              <p class="step-err" data-err="era" role="alert">Choose an era to continue. The archive desk can advise if the choice is difficult.</p>
+              <noscript><p class="small" style="margin-top:1.2rem">This application uses JavaScript for the live manifest and the four steps. Telephone +00 (TT) 00-41 and an officer will read the form to you.</p></noscript>
+            </section>
+
+            <section class="step-panel" data-step="2" hidden>
+              <p class="step-legend">Step 02 of 04 — Party &amp; passage</p>
+              <h2 class="step-title">Who is travelling,<br>and how comfortably?</h2>
+              <p class="step-sub">Every traveller is named on the manifest. Names can be added at the desk, but the corridor count cannot — the return is booked per person.</p>
+
+              <div class="field">
+                <span class="field__label">Party size <span class="field__hint">Maximum 6 per manifest</span></span>
+                <div style="display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap">
+                  <div class="counter">
+                    <button type="button" data-count="-1" aria-label="One fewer traveller">−</button>
+                    <span data-travellers aria-live="polite">1</span>
+                    <button type="button" data-count="1" aria-label="One more traveller">+</button>
+                  </div>
+                  <span class="small">Groups above six travel as a school party and require Form 12.</span>
+                </div>
+              </div>
+
+              <p class="field__label" style="margin:2rem 0 .7rem">Class of passage</p>
+              <div class="choices choices--4" data-class-choices>
+                <label class="choice is-selected">
+                  <input type="radio" name="cls" value="standard" checked>
+                  <span class="choice__name">Standard</span>
+                  <span class="choice__meta">Included</span>
+                  <span class="choice__desc">Coat, boots, a name on the manifest and a guide who knows your century.</span>
+                </label>
+                <label class="choice">
+                  <input type="radio" name="cls" value="corridor">
+                  <span class="choice__name">Corridor window</span>
+                  <span class="choice__meta">+ T 240</span>
+                  <span class="choice__desc">A seat by the glass. The view is the whole of the nineteenth century going past.</span>
+                </label>
+                <label class="choice">
+                  <input type="radio" name="cls" value="scholar">
+                  <span class="choice__name">Scholar</span>
+                  <span class="choice__meta">+ T 180</span>
+                  <span class="choice__desc">Archive access, a reading lamp and permission to take notes in pencil only.</span>
+                </label>
+                <label class="choice">
+                  <input type="radio" name="cls" value="discreet">
+                  <span class="choice__name">Discreet</span>
+                  <span class="choice__meta">+ T 1,200</span>
+                  <span class="choice__desc">No photographs, no introductions, no name in the arrivals ledger. Popular with diplomats.</span>
+                </label>
+              </div>
+
+              <div class="dossier-sub" style="margin-top:2rem">
+                <div class="field" style="margin-bottom:1rem">
+                  <label for="window">Departure window</label>
+                  <select class="select" id="window" name="window">
+                    <option value="thu-0600" data-short="Thu 06:00">Thursday 06:00 — first corridor</option>
+                    <option value="thu-1400" data-short="Thu 14:00" selected>Thursday 14:00 — afternoon corridor</option>
+                    <option value="last-thu" data-short="Last Thu 06:00">Last Thursday 06:00 — standby</option>
+                    <option value="sun-0900" data-short="Sun 09:00">Sunday 09:00 — quiet corridor</option>
+                  </select>
+                </div>
+                <div class="field" style="margin-bottom:1rem">
+                  <label for="return">Return</label>
+                  <select class="select" id="return" name="return">
+                    <option value="same" data-short="Same day">Same day — recommended</option>
+                    <option value="next" data-short="Next morning">Next morning — one night abroad</option>
+                    <option value="fixed" data-short="Fixed, +90 min">Fixed return, ninety minutes' grace</option>
+                  </select>
+                </div>
+              </div>
+              <p class="small" style="max-width:58ch">The return is fixed before departure. Changes made in the past are possible but are charged at the rate of the century you are leaving.</p>
+            </section>
+
+            <section class="step-panel" data-step="3" hidden>
+              <p class="step-legend">Step 03 of 04 — Traveller details</p>
+              <h2 class="step-title">Who should we<br>expect back?</h2>
+              <p class="step-sub">Details are used for the manifest, the return call and the medical card. The Bureau keeps them for ninety years, which for some travellers is not long enough.</p>
+
+              <div class="dossier-sub" style="margin-top:0">
+                <div class="field">
+                  <label for="given">Given name</label>
+                  <input class="input" id="given" name="given" type="text" autocomplete="given-name" placeholder="As written at birth">
+                  <span class="field__err" data-err-for="given">Enter a given name for the manifest.</span>
+                </div>
+                <div class="field">
+                  <label for="surname">Surname</label>
+                  <input class="input" id="surname" name="surname" type="text" autocomplete="family-name" placeholder="The one you intend to use">
+                  <span class="field__err" data-err-for="surname">Enter the surname you intend to travel under.</span>
+                </div>
+              </div>
+
+              <div class="dossier-sub">
+                <div class="field">
+                  <label for="birth">Year of birth <span class="field__hint">1900–2086</span></label>
+                  <input class="input" id="birth" name="birth" type="number" inputmode="numeric" min="1900" max="2086" placeholder="1994">
+                  <span class="field__err" data-err-for="birth">Enter a four-digit year between 1900 and 2086.</span>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="For the confirmation and the return call">
+                  <span class="field__err" data-err-for="email">Enter a working email address. The return call is not a metaphor.</span>
+                </div>
+              </div>
+
+              <div class="dossier-sub">
+                <div class="field">
+                  <label for="phone">Telephone <span class="field__hint">Answered in any century</span></label>
+                  <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+91">
+                  <span class="field__err" data-err-for="phone">Enter a telephone number with at least seven digits.</span>
+                </div>
+                <div class="field">
+                  <label for="registry">Registry number <span class="field__hint">Optional · TT-0000-0000</span></label>
+                  <input class="input" id="registry" name="registry" type="text" placeholder="On your birth card">
+                  <span class="field__err" data-err-for="registry">Registry numbers follow TT-0000-0000. Check the card at the corridor desk.</span>
+                </div>
+              </div>
+
+              <label class="check" style="margin-top:.6rem">
+                <input type="checkbox" data-insurance>
+                <span><b style="color:var(--ink);font-weight:500">Paradox insurance</b> — 4% of the fare. Covers up to T 4,000,000 and one mild grandfather incident. Underwritten by Lloyd's of 1897, 1962 and 2140.</span>
+              </label>
+
+              <div style="border-top:1px solid var(--rule);margin:1.6rem 0 1.2rem"></div>
+
+              <label class="check">
+                <input type="checkbox" name="ack" data-consent>
+                <span>I have read and acknowledged all six standing advisories, including the customs schedule.</span>
+              </label>
+              <label class="check">
+                <input type="checkbox" name="med" data-consent>
+                <span>I declare no known condition that would endanger a century, a guide or myself.</span>
+              </label>
+              <label class="check">
+                <input type="checkbox" name="form88" data-consent>
+                <span>I accept the self-encounter protocol (Form 88) and will recite it at the corridor desk.</span>
+              </label>
+              <p class="step-err" data-err="consent" role="alert">All three declarations must be acknowledged before the application can be filed.</p>
+            </section>
+
+            <section class="step-panel" data-step="4" hidden>
+              <p class="step-legend">Step 04 of 04 — Review</p>
+              <h2 class="step-title">Review the manifest.</h2>
+              <p class="step-sub">Check the details below. Once filed, the era is held for ninety minutes while an officer reads the file backwards and confirms that you exist at both ends.</p>
+              <dl class="review-block" data-review></dl>
+              <p class="small" style="margin-top:1.2rem;max-width:58ch">By submitting, you confirm the details are correct, the declarations are true, and you understand that the deposit is refundable only until the corridor is opened.</p>
+            </section>
+
+            <div class="form-actions">
+              <button type="button" class="btn btn--ghost" data-back hidden>← Back</button>
+              <div style="display:flex;gap:1rem;margin-left:auto">
+                <button type="button" class="btn btn--solid" data-next>Continue <span class="btn__arr">→</span></button>
+                <button type="submit" class="btn btn--ox" data-submit hidden>File application <span class="btn__arr">→</span></button>
+              </div>
+            </div>
+          </form>
+
+          <div class="confirmed" data-confirmed hidden>
+            <div class="confirmed__top">
+              <div>
+                <p class="label label--ox" style="margin-bottom:.8rem">Application filed</p>
+                <h2>You are<br><em>expected.</em></h2>
+                <p class="ref" style="margin-top:1.1rem" data-confirm-ref>Reference TT-2087-0000</p>
+              </div>
+              <div class="stamp stamp--lg" style="color:var(--moss);border-color:var(--moss);outline-color:var(--moss);transform:rotate(-4deg)">
+                <b>Approved</b>Provisional visa<br><span data-confirm-date>24 / 10 / 2087</span>
+              </div>
+            </div>
+            <p class="small" style="max-width:62ch">An officer has read your file backwards and found nothing that needs discussing. Your era is held for ninety minutes. Present the reference at Corridor 4, Level −2, with the packing list and no batteries.</p>
+            <dl class="review-block" data-confirm-summary></dl>
+            <div class="form-actions">
+              <button type="button" class="btn btn--solid" data-print>Print manifest</button>
+              <a class="btn btn--ghost" href="packing.html">Read the packing list <span class="btn__arr">→</span></a>
+            </div>
+            <p class="small" style="margin-top:1.2rem">A copy has been sent to your email and filed at the corridor desk. If nothing arrives within the hour, call +00 (TT) 00-41 and ask for the officer who filed it.</p>
+          </div>
+        </div>
+
+        <aside class="booking-aside" aria-label="Live manifest">
+          <div class="pass">
+            <div class="pass__head"><span>Visa manifest</span><b data-pass-status>Draft</b></div>
+            <div class="pass__body">
+              <div class="pass__route">
+                <div class="pass__code"><span data-pass-code>AGR</span><small>from the present</small></div>
+                <span class="pass__arrow" aria-hidden="true"></span>
+                <div class="pass__code"><span data-pass-year>1605</span><small>arrival</small></div>
+              </div>
+              <div class="pass__rows">
+                <div class="pass__row"><span>Era</span><b data-pass-era>The Mughal Court</b></div>
+                <div class="pass__row"><span>Travellers</span><b data-pass-pax>01</b></div>
+                <div class="pass__row"><span>Class</span><b data-pass-class>Standard</b></div>
+                <div class="pass__row"><span>Departure</span><b data-pass-window>Thu 14:00</b></div>
+                <div class="pass__row"><span>Return</span><b data-pass-return>Same day</b></div>
+                <div class="pass__row"><span>Hazard</span><b data-pass-hazard>Low</b></div>
+              </div>
+              <div class="pass__perf"></div>
+              <div class="pass__total"><span>Total, incl. levies</span><b data-pass-total aria-live="polite">T 1,510</b></div>
+            </div>
+            <div class="pass__foot">
+              <p class="pass__note">Deposit <b data-pass-deposit>T 680</b> due now · balance at the corridor desk. This manifest is not a visa until stamped.</p>
+            </div>
+          </div>
+          <div class="stamp" style="align-self:start;transform:rotate(-3deg)"><b>Provisional</b>Not valid for passage<br>until stamped</div>
+          <p class="manifest-note">Prices are per traveller and include guide, inoculations and return. The temporal levy (2%) is set by the Ministry and is not negotiable, refundable or interesting. Insurance is 4% of the fare.</p>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <div class="sec-head__meta">
+          <span class="sec-head__no">Section 05 — After filing</span>
+          <span class="sec-head__line"></span>
+          <span class="sec-head__no">Four things happen</span>
+        </div>
+        <div class="sec-head__row">
+          <h2 class="title">Then the file<br><em>leaves your hands.</em></h2>
+          <p class="sec-head__note">Nothing below requires you to do anything except turn up on time, which the Bureau has found is the hardest part.</p>
+        </div>
+      </header>
+
+      <div class="procedure__grid" data-reveal>
+        <div class="steps3">
+          <div class="step3">
+            <span class="step3__no">01</span>
+            <h3>An officer reads it backwards</h3>
+            <p>Applications are reviewed from the return date to the departure. It takes eleven minutes, most of it spent confirming that you exist at both ends.</p>
+          </div>
+          <div class="step3">
+            <span class="step3__no">02</span>
+            <h3>The deposit is taken</h3>
+            <p>45% now, the balance at the corridor desk. If the era is re-surveyed, everything is returned, including the deposit and the cost of the inoculations.</p>
+          </div>
+          <div class="step3">
+            <span class="step3__no">03</span>
+            <h3>The briefing is compulsory</h3>
+            <p>Ninety minutes before your window: medical course, the acknowledgement recital, and one question we do not print on this page.</p>
+          </div>
+          <div class="step3">
+            <span class="step3__no">04</span>
+            <h3>You leave from Corridor 4</h3>
+            <p>Level −2, behind the stationery cupboard. Arrive with no batteries, one photograph, and the name you intend to use.</p>
+          </div>
+        </div>
+        <div class="buybox">
+          <p class="label label--ox" style="margin-bottom:1rem">Visa desk</p>
+          <p class="small" style="color:var(--ink-2);margin:0">Applications are filed here or read aloud at Corridor 4. The desk is open Monday to Friday, 09:00–17:00 Bureau time, and on the last Thursday of each month until the corridor closes.</p>
+          <dl class="deflist" style="margin-top:1.2rem">
+            <div class="deflist__row"><dt>Telephone</dt><dd>+00 (TT) 00-41</dd></div>
+            <div class="deflist__row"><dt>In person</dt><dd>Corridor 4, Level −2</dd></div>
+            <div class="deflist__row"><dt>Wait</dt><dd>11 minutes, or until 1605</dd></div>
+          </dl>
+          <a class="btn btn--ghost btn--block" href="faq.html" style="margin-top:1.2rem">Paradox questions <span class="btn__arr">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="cta-band" data-reveal>
+        <div>
+          <p class="label label--ox" style="margin-bottom:1rem">Not travelling yourself</p>
+          <h2>Time is a gift.<br><em>So is a departure.</em></h2>
+          <p class="small" style="max-width:54ch">Gift passages are issued on the same manifest and can be redeemed within one year in either direction. The recipient must still sign the declarations, which has caused two family arguments and one cancelled engagement.</p>
+        </div>
+        <div class="cta-band__aside">
+          <ul class="deflist" style="border-top-color:var(--rule)">
+            <li class="deflist__row" style="grid-template-columns:1fr auto"><dt style="padding:0">Gift passages</dt><dd class="mono small">From T 420</dd></li>
+            <li class="deflist__row" style="grid-template-columns:1fr auto"><dt style="padding:0">Valid for</dt><dd class="mono small">One year</dd></li>
+            <li class="deflist__row" style="grid-template-columns:1fr auto"><dt style="padding:0">Redeemable</dt><dd class="mono small">Either direction</dd></li>
+          </ul>
+          <a class="btn btn--solid btn--block" href="souvenirs.html" style="margin-top:1.4rem">Visit the gift shop <span class="btn__arr">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="site-foot__grid">
+      <div class="site-foot__brand">
+        <a class="brand" href="index.html" aria-label="Temporal Tourism Bureau — home">
+          <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor"/>
+            <circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 2.6" opacity=".55"/>
+            <path d="M24 6v5M24 37v5M6 24h5M37 24h5" stroke="currentColor"/>
+            <path d="M18.6 15.6h10.8l-4.4 6.6a1.2 1.2 0 0 0 0 1.4l4.4 6.8H18.6l4.4-6.8a1.2 1.2 0 0 0 0-1.4z" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__text"><b>Temporal Tourism Bureau</b><em>Est. 2087 · Licence TT-0041</em></span>
+        </a>
+        <p>Regulating civilian travel across time since 2087. Twelve corridors, forty-seven eras, one very large filing cabinet.</p>
+      </div>
+      <div>
+        <h4>Travel</h4>
+        <ul>
+          <li><a href="destinations.html">Era index</a></li>
+          <li><a href="booking.html">Book a departure</a></li>
+          <li><a href="packing.html">Packing list</a></li>
+          <li><a href="advisories.html">Travel advisories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The Bureau</h4>
+        <ul>
+          <li><a href="souvenirs.html">Authorised souvenirs</a></li>
+          <li><a href="diaries.html">Traveller diaries</a></li>
+          <li><a href="faq.html">Paradox FAQ</a></li>
+          <li><a href="booking.html">Visa status</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visiting office</h4>
+        <ul>
+          <li>Corridor 4, Level −2</li>
+          <li>Ashoka University, Sonipat</li>
+          <li>Mon–Fri · 09:00–17:00 BST</li>
+        </ul>
+        <p class="label" style="margin-top:1.2rem">Bureau time <b data-clock style="color:var(--ink);letter-spacing:.08em">00:00:00</b></p>
+      </div>
+    </div>
+    <div class="site-foot__bar">
+      <span>© 2087–2104 The Temporal Tourism Bureau</span>
+      <span>All timelines subject to change</span>
+    </div>
+    <p class="credits">Credits — Artwork: original engraved plates generated for this project with AI (ImageGen), art-directed to a single sepia ink palette. Typefaces: <b>Fraunces</b> (Undercase Type), <b>Archivo</b> (Omnibus-Type) and <b>Space Mono</b> (Colophon Foundry), served via Google Fonts under the SIL Open Font License. Seals, stamps and icons drawn in SVG for this entry. This is a fictional bureau; no timelines were harmed.</p>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/booking.js"></script>
+</body>
+</html>

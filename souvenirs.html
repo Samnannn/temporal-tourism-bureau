@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Souvenirs — Temporal Tourism Bureau</title>
+<meta name="description" content="The Bureau's authorised gift shop: six certified-inert objects from the corridors, each stamped as a replica and cleared for the return journey.">
+<meta name="theme-color" content="#f2eadc">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f2eadc'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23191410'/%3E%3Cpath d='M11 9h10l-4 6 4 7H11l4-7z' fill='none' stroke='%23191410'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300..700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.className += " js";</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <span class="topbar__item"><span class="dot" aria-hidden="true"></span> Bureau Standard Time <b data-clock>00:00:00</b></span>
+    <span class="topbar__item topbar__mid">All twelve corridors open</span>
+    <a class="topbar__item" href="advisories.html"><span class="dot dot--warn" aria-hidden="true"></span> 6 standing advisories</a>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap site-head__in">
+    <a class="brand" href="index.html" aria-label="Temporal Tourism Bureau — home">
+      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor"/>
+        <g class="brand__ring"><circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 2.6" opacity=".55"/></g>
+        <path d="M24 6v5M24 37v5M6 24h5M37 24h5" stroke="currentColor"/>
+        <path d="M18.6 15.6h10.8l-4.4 6.6a1.2 1.2 0 0 0 0 1.4l4.4 6.8H18.6l4.4-6.8a1.2 1.2 0 0 0 0-1.4z" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand__text"><b>Temporal Tourism Bureau</b><em>Est. 2087 · Licence TT-0041</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="destinations.html">Eras</a>
+      <a href="advisories.html">Advisories</a>
+      <a href="packing.html">Packing</a>
+      <a href="souvenirs.html" class="is-active" aria-current="page">Souvenirs</a>
+      <a href="diaries.html">Diaries</a>
+      <a href="faq.html">Paradox FAQ</a>
+      <a class="btn btn--solid nav__book" href="booking.html">Book a departure <span class="btn__arr">→</span></a>
+    </nav>
+    <button class="burger" data-burger aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Souvenirs</span></nav>
+      <div class="page-head__row">
+        <div>
+          <p class="eyebrow">Section 06 — Authorised goods</p>
+          <h1 class="display display--sm">Nothing that remembers<br><em>where it has been.</em></h1>
+          <p class="lede">The Bureau shop sells objects that survived the corridor and can prove it. Everything here is a replica, an extract or a certified original. Nothing here can be called as a witness.</p>
+        </div>
+        <div class="page-head__aside">
+          <p class="label" style="margin-bottom:.7rem">The shop</p>
+          <p class="small" style="margin:0">Corridor 4, beside the lost property window. Open whenever the present is. Purchases are held at the gate and handed over after customs, which is the only part of the transaction anybody remembers.</p>
+          <p class="label" style="margin-top:1.2rem">Case allowance <b style="color:var(--ink)">one, coat-sized</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 COUNTER -->
+  <section class="section section--flush" id="counter">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <div class="sec-head__meta">
+          <span class="sec-head__no">Section 01 — Current stock</span>
+          <span class="sec-head__line"></span>
+          <span class="sec-head__no">Six objects on the shelf</span>
+        </div>
+        <div class="sec-head__row">
+          <h2 class="title">Six objects.<br><em>No histories attached.</em></h2>
+          <p class="sec-head__note">Each item is stamped on the base with a replica mark and a corridor code. The stamp is the certificate; the certificate is also for sale, but there is no reason to buy both.</p>
+        </div>
+      </header>
+
+      <div class="manifest-bar souv-bar" data-case-bar data-reveal>
+        <span>Souvenir case · <b data-case-count aria-live="polite">empty</b></span>
+        <span class="souv-bar__total">Case total <b data-case-total>T 0</b></span>
+        <span class="manifest-bar__actions">
+          <button type="button" data-case-clear disabled>Clear case</button>
+        </span>
+      </div>
+
+      <noscript><p class="small" style="margin-bottom:1.4rem">The case tally needs JavaScript. Everything else — stock, prices and customs rules — is printed on the page.</p></noscript>
+
+      <div class="product-grid" data-stagger>
+
+        <article class="product" data-product data-name="Certified Air, 1605" data-price="340" data-reveal>
+          <div class="product__media">
+            <img src="assets/img/souvenir-air.jpg" alt="An engraved apothecary bottle with a waxed cork and a blank paper tag on a cord." width="1100" height="1100" loading="lazy">
+            <span class="product__tag">Certified inert · SV-01</span>
+          </div>
+          <div class="product__body">
+            <span class="product__era">1605 · Agra · Corridor 4</span>
+            <h3>Certified Air, 1605</h3>
+            <p>One apothecary bottle of air drawn from the Mughal court at dusk. Inert, odourless and slightly warmer than the room you are standing in. It does not transport you; that is the visa.</p>
+            <div class="product__foot">
+              <span class="product__price">T 340<small>Per bottle · 12 left</small></span>
+              <button type="button" class="btn btn--ghost btn--sm" data-add aria-pressed="false">Add to case</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-product data-name="Cretaceous Amber" data-price="1200" data-reveal>
+          <div class="product__media">
+            <img src="assets/img/souvenir-amber.jpg" alt="A cabochon of amber containing a small insect, resting on dark velvet." width="1100" height="1100" loading="lazy">
+            <span class="product__tag">Certified inert · SV-02</span>
+          </div>
+          <div class="product__body">
+            <span class="product__era">68M BCE · Hell Creek · Corridor 9</span>
+            <h3>Cretaceous Amber</h3>
+            <p>A cabochon containing one small, unidentified insect and one large, unattributable feeling. Pre-impact, pre-mosquito, pre-consequence. The insect has been dead for sixty-eight million years and is taking it well.</p>
+            <div class="product__foot">
+              <span class="product__price">T 1,200<small>Per cabochon · 3 left</small></span>
+              <button type="button" class="btn btn--ghost btn--sm" data-add aria-pressed="false">Add to case</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-product data-name="Pocket Sundial, 1786" data-price="720" data-reveal>
+          <div class="product__media">
+            <img src="assets/img/souvenir-sundial.jpg" alt="An open brass pocket sundial with an engraved dial and folding gnomon." width="1100" height="1100" loading="lazy">
+            <span class="product__tag">Certified inert · SV-03</span>
+          </div>
+          <div class="product__body">
+            <span class="product__era">1786 · Vienna · Corridor 2</span>
+            <h3>Pocket Sundial, 1786</h3>
+            <p>Brass, folding, and wrong by eleven minutes. The Bureau does not correct the error; the error is the provenance. Works once a day, in daylight, in the century it was made for, which is not yours.</p>
+            <div class="product__foot">
+              <span class="product__price">T 720<small>Per dial · 8 left</small></span>
+              <button type="button" class="btn btn--ghost btn--sm" data-add aria-pressed="false">Add to case</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-product data-name="The Quiet Hour, 2041" data-price="280" data-reveal>
+          <div class="product__media">
+            <img src="assets/img/souvenir-cassette.jpg" alt="A compact audio cassette with a blank paper label, engraved catalogue style." width="1100" height="1100" loading="lazy">
+            <span class="product__tag">Certified inert · SV-04</span>
+          </div>
+          <div class="product__body">
+            <span class="product__era">2041 · Lisbon · Corridor 6</span>
+            <h3>The Quiet Hour, 2041</h3>
+            <p>Forty-six minutes of a family ignoring one another on the last connected afternoon. Recorded from the hallway, faithfully, including the part where nobody says anything worth keeping. Playback equipment not included, not needed, not permitted.</p>
+            <div class="product__foot">
+              <span class="product__price">T 280<small>Per cassette · 24 left</small></span>
+              <button type="button" class="btn btn--ghost btn--sm" data-add aria-pressed="false">Add to case</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-product data-name="Library Dust, Alexandria" data-price="460" data-reveal>
+          <div class="product__media">
+            <img src="assets/img/souvenir-dust.jpg" alt="A sealed glass vial of fine grey dust with a metal stopper and a small tag." width="1100" height="1100" loading="lazy">
+            <span class="product__tag">Certified inert · SV-05</span>
+          </div>
+          <div class="product__body">
+            <span class="product__era">250 BCE · Alexandria · Corridor 1</span>
+            <h3>Library Dust, Alexandria</h3>
+            <p>A vial of dust recovered from the reading-room floor. Safe, sterile and disappointingly unmagical. Contains traces of ash, papyrus and one lost afternoon. Do not inhale the century; the Bureau has stopped issuing the form for it.</p>
+            <div class="product__foot">
+              <span class="product__price">T 460<small>Per vial · waitlist</small></span>
+              <button type="button" class="btn btn--ghost btn--sm" data-add aria-pressed="false">Add to case</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-product data-name="Pressed First Autumn" data-price="380" data-reveal>
+          <div class="product__media">
+            <img src="assets/img/souvenir-autumn.jpg" alt="A pressed autumn leaf mounted on a pale herbarium sheet with a handwritten label." width="1100" height="1100" loading="lazy">
+            <span class="product__tag">Certified inert · SV-06</span>
+          </div>
+          <div class="product__body">
+            <span class="product__era">9,500 BCE · Anatolia · Corridor 11</span>
+            <h3>Pressed First Autumn</h3>
+            <p>A herbarium sheet, pressed between acid-free board. The leaf is real, the label is a reproduction, and the autumn was the first one anybody thought to notice. Handle by the mount. The leaf has done enough.</p>
+            <div class="product__foot">
+              <span class="product__price">T 380<small>Per sheet · 6 left</small></span>
+              <button type="button" class="btn btn--ghost btn--sm" data-add aria-pressed="false">Add to case</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="inline-stamp-row" style="margin-top:2.4rem" data-reveal>
+        <div class="stamp"><b>Certified inert</b>Eleven-day test<br>No exceptions</div>
+        <p class="small" style="max-width:52ch;margin:0">Prices are in Bureau tender and include the replica mark. Nothing is charged here: the corridor desk collects at the gate, after customs, and only if the object still qualifies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 CERTIFICATION -->
+  <section class="section band--ink" id="certified">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <div class="sec-head__meta">
+          <span class="sec-head__no">Section 02 — Certification</span>
+          <span class="sec-head__line"></span>
+          <span class="sec-head__no">Reg. 22 / 2087</span>
+        </div>
+        <div class="sec-head__row">
+          <h2 class="title">How an object becomes<br><em>safe to bring home.</em></h2>
+          <p class="sec-head__note">The object store is the least visited room in the Bureau and the only one with a waiting list. Four stages, no shortcuts, and a stamp that is cut rather than printed.</p>
+        </div>
+      </header>
+
+      <div class="pillars" data-stagger>
+        <div class="pillar" data-reveal>
+          <span class="pillar__no">01 —</span>
+          <h3>Sourced</h3>
+          <p>Recovered, catalogued, and in most cases returned to the exact shelf it came from. The shop's records are more complete than the century's, and considerably more honest.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <span class="pillar__no">02 —</span>
+          <h3>Tested</h3>
+          <p>Eleven days in the inertness chamber. If it ticks, glows, remembers a name or improves anything, it is destroyed and the paperwork is filed under "learning".</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <span class="pillar__no">03 —</span>
+          <h3>Stamped</h3>
+          <p>The replica mark is cut into the base, not printed on it. Removing the mark voids the object's status first and your return chit second. Customs checks in that order.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <span class="pillar__no">04 —</span>
+          <h3>Carried</h3>
+          <p>Collected at the gate on your return and declared at the desk. The declaration form is short. The answer is already printed on the base of the object.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 CUSTOMS -->
+  <section class="section" id="customs">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <div class="sec-head__meta">
+          <span class="sec-head__no">Section 03 — Customs</span>
+          <span class="sec-head__line"></span>
+          <span class="sec-head__no">Applies in both directions</span>
+        </div>
+        <div class="sec-head__row">
+          <h2 class="title">What leaves with you.<br><em>What stays where it was.</em></h2>
+          <p class="sec-head__note">A souvenir is an object that has agreed to stop being evidence. The two lists below are read aloud at the corridor desk, in this order, to every traveller.</p>
+        </div>
+      </header>
+
+      <div class="customs" data-reveal>
+        <div class="customs__col customs__col--yes">
+          <div class="customs__head"><h3>May cross</h3><span class="mono">Cleared</span></div>
+          <ul class="customs__list customs__list--yes">
+            <li>Replicas bearing an intact replica mark</li>
+            <li>Objects with no date, no portrait and no mechanism</li>
+            <li>One item per traveller, per era, per lifetime</li>
+            <li>Letters you wrote yourself and did not send</li>
+            <li>Dust, if it is sealed in a labelled vial</li>
+            <li>A receipt. Always the receipt.</li>
+          </ul>
+        </div>
+        <div class="customs__col customs__col--no">
+          <div class="customs__head"><h3>Will be held</h3><span class="mono">Not cleared</span></div>
+          <ul class="customs__list customs__list--no">
+            <li>Anything that remembers</li>
+            <li>Coins still in circulation where you found them</li>
+            <li>Correspondence in someone else's hand</li>
+            <li>Objects from the century you are going to</li>
+            <li>Anything that ticks, hums or improves</li>
+            <li>The receipt, if the object is not on it</li>
+          </ul>
+        </div>
+      </div>
+
+      <figure class="field-note" style="margin-top:clamp(3rem,6vw,5rem)" data-reveal>
+        <p>"Travellers ask for something that proves they were there. The Bureau's position is that they were there. The object only has to prove that it was not."</p>
+        <footer><b>H. Voss</b> — Keeper of the object store, Corridor 4</footer>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 04 CTA -->
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-band" data-reveal>
+        <div>
+          <p class="label label--ox" style="margin-bottom:1rem">After the counter</p>
+          <h2>Buy nothing<br><em>that can testify.</em></h2>
+          <p class="small" style="max-width:54ch">Souvenirs are packed by the corridor desk and travel in the coat. Your visa, the standing advisories and a seven-kilogram allowance are the rest of the paperwork, and the only parts that can delay you.</p>
+        </div>
+        <div class="cta-band__aside">
+          <ul class="deflist" style="border-top-color:var(--rule)">
+            <li class="deflist__row" style="grid-template-columns:1fr auto"><dt style="padding:0">Objects in stock</dt><dd class="mono small">6</dd></li>
+            <li class="deflist__row" style="grid-template-columns:1fr auto"><dt style="padding:0">Case allowance</dt><dd class="mono small">1 item</dd></li>
+            <li class="deflist__row" style="grid-template-columns:1fr auto"><dt style="padding:0">Certification</dt><dd class="mono small">11 days</dd></li>
+            <li class="deflist__row" style="grid-template-columns:1fr auto"><dt style="padding:0">Collection</dt><dd class="mono small">Gate 4, on return</dd></li>
+          </ul>
+          <a class="btn btn--solid btn--block" href="booking.html" style="margin-top:1.4rem">Apply for a visa <span class="btn__arr">→</span></a>
+          <a class="btn btn--ghost btn--block" href="packing.html" style="margin-top:.6rem">Read the packing list</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="site-foot__grid">
+      <div class="site-foot__brand">
+        <a class="brand" href="index.html" aria-label="Temporal Tourism Bureau — home">
+          <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor"/>
+            <circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 2.6" opacity=".55"/>
+            <path d="M24 6v5M24 37v5M6 24h5M37 24h5" stroke="currentColor"/>
+            <path d="M18.6 15.6h10.8l-4.4 6.6a1.2 1.2 0 0 0 0 1.4l4.4 6.8H18.6l4.4-6.8a1.2 1.2 0 0 0 0-1.4z" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__text"><b>Temporal Tourism Bureau</b><em>Est. 2087 · Licence TT-0041</em></span>
+        </a>
+        <p>Regulating civilian travel across time since 2087. Twelve corridors, forty-seven eras, one very large filing cabinet.</p>
+      </div>
+      <div>
+        <h4>Travel</h4>
+        <ul>
+          <li><a href="destinations.html">Era index</a></li>
+          <li><a href="booking.html">Book a departure</a></li>
+          <li><a href="packing.html">Packing list</a></li>
+          <li><a href="advisories.html">Travel advisories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The Bureau</h4>
+        <ul>
+          <li><a href="souvenirs.html">Authorised souvenirs</a></li>
+          <li><a href="diaries.html">Traveller diaries</a></li>
+          <li><a href="faq.html">Paradox FAQ</a></li>
+          <li><a href="booking.html">Visa status</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visiting office</h4>
+        <ul>
+          <li>Corridor 4, Level −2</li>
+          <li>Ashoka University, Sonipat</li>
+          <li>Mon–Fri · 09:00–17:00 BST</li>
+        </ul>
+        <p class="label" style="margin-top:1.2rem">Bureau time <b data-clock style="color:var(--ink);letter-spacing:.08em">00:00:00</b></p>
+      </div>
+    </div>
+    <div class="site-foot__bar">
+      <span>© 2087–2104 The Temporal Tourism Bureau</span>
+      <span>All timelines subject to change</span>
+    </div>
+    <p class="credits">Credits — Artwork: original engraved plates generated for this project with AI (ImageGen), art-directed to a single sepia ink palette. Typefaces: <b>Fraunces</b> (Undercase Type), <b>Archivo</b> (Omnibus-Type) and <b>Space Mono</b> (Colophon Foundry), served via Google Fonts under the SIL Open Font License. Seals, stamps and icons drawn in SVG for this entry. This is a fictional bureau; no timelines were harmed.</p>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/souvenirs.js"></script>
+</body>
+</html>

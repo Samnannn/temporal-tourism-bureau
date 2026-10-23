@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Packing List — Temporal Tourism Bureau</title>
+<meta name="description" content="The official Bureau packing list: five issued items, six things to bring, six things to leave behind, and the era-specific kit for your century.">
+<meta name="theme-color" content="#f2eadc">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f2eadc'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23191410'/%3E%3Cpath d='M11 9h10l-4 6 4 7H11l4-7z' fill='none' stroke='%23191410'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300..700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.className += " js";</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <span class="topbar__item"><span class="dot" aria-hidden="true"></span> Bureau Standard Time <b data-clock>00:00:00</b></span>
+    <span class="topbar__item topbar__mid">All twelve corridors open</span>
+    <a class="topbar__item" href="advisories.html"><span class="dot dot--warn" aria-hidden="true"></span> 6 standing advisories</a>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap site-head__in">
+    <a class="brand" href="index.html" aria-label="Temporal Tourism Bureau — home">
+      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor"/>
+        <g class="brand__ring"><circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 2.6" opacity=".55"/></g>
+        <path d="M24 6v5M24 37v5M6 24h5M37 24h5" stroke="currentColor"/>
+        <path d="M18.6 15.6h10.8l-4.4 6.6a1.2 1.2 0 0 0 0 1.4l4.4 6.8H18.6l4.4-6.8a1.2 1.2 0 0 0 0-1.4z" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand__text"><b>Temporal Tourism Bureau</b><em>Est. 2087 · Licence TT-0041</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="destinations.html">Eras</a>
+      <a href="advisories.html">Advisories</a>
+      <a href="packing.html" class="is-active" aria-current="page">Packing</a>
+      <a href="souvenirs.html">Souvenirs</a>
+      <a href="diaries.html">Diaries</a>
+      <a href="faq.html">Paradox FAQ</a>
+      <a class="btn btn--solid nav__book" href="booking.html">Book a departure <span class="btn__arr">→</span></a>
+    </nav>
+    <button class="burger" data-burger aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Packing list</span></nav>
+      <div class="page-head__row">
+        <div>
+          <p class="eyebrow">Section 05 — Kit &amp; conduct</p>
+          <h1 class="display display--sm">Everything you need,<br><em>which is almost nothing.</em></h1>
+          <p class="lede">The Bureau issues the coat, the boots and the coin. You bring a photograph, a pencil and a name. Everything else is either provided or prohibited, sometimes both.</p>
+        </div>
+        <div class="page-head__aside">
+          <p class="label" style="margin-bottom:.7rem">Allowance</p>
+          <p class="small" style="margin:0">One bag, seven kilograms, no batteries. The bag is returned to you at the end of the visit, usually with less in it. Anything the Bureau issues is fitted at the corridor desk and returned at the gate.</p>
+          <p class="label" style="margin-top:1.2rem">Issued kit <b style="color:var(--ink)">5 items</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--flush">
+    <div class="wrap">
+
+      <div class="manifest-bar" data-reveal>
+        <span>Packing manifest · <b data-pack-count>0 of 12 checked</b></span>
+        <span class="manifest-bar__actions">
+          <button type="button" data-pack-all>Check all</button>
+          <button type="button" data-pack-clear>Clear</button>
+        </span>
+      </div>
+
+      <div class="pack-grid">
+        <div>
+          <div class="field" style="max-width:420px">
+            <label for="pack-era">Packing for</label>
+            <select class="select" id="pack-era" data-pack-era></select>
+          </div>
+
+          <div class="pack-group">
+            <div class="pack-group__head"><h3>Issued at the corridor desk</h3><span>5 items · already packed</span></div>
+            <label class="pack-item">
+              <input type="checkbox" checked disabled>
+              <span class="pack-item__txt"><span class="pack-item__name">Bureau coat and boots</span><span class="pack-item__note">Fitted at the desk, returned at the gate. The coat is warmer than it looks and heavier than it needs to be.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" checked disabled>
+              <span class="pack-item__txt"><span class="pack-item__name">Medical card, green docket</span><span class="pack-item__note">Four languages, one patient. Show it to any Bureau officer before you explain anything.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" checked disabled>
+              <span class="pack-item__txt"><span class="pack-item__name">Era coin purse</span><span class="pack-item__note">Stamped and weighed for your destination. Do not add your own coins to it.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" checked disabled>
+              <span class="pack-item__txt"><span class="pack-item__name">Return chit</span><span class="pack-item__note">Your seat home, in duplicate. Keep one on your person and one in the coat.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" checked disabled>
+              <span class="pack-item__txt"><span class="pack-item__name">A guide</span><span class="pack-item__note">Not technically luggage. Listed anyway, because travellers have tried to leave without one.</span></span>
+            </label>
+          </div>
+
+          <div class="pack-group">
+            <div class="pack-group__head"><h3>Bring yourself</h3><span>6 items</span></div>
+            <label class="pack-item">
+              <input type="checkbox" data-pack>
+              <span class="pack-item__txt"><span class="pack-item__name">One printed photograph of your family</span><span class="pack-item__note">Paper, not a screen. The Bureau will laminate it, which ruins it slightly.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" data-pack>
+              <span class="pack-item__txt"><span class="pack-item__name">Spectacles, and a spare</span><span class="pack-item__note">The past has no optician on call and no patience for the alternative.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" data-pack>
+              <span class="pack-item__txt"><span class="pack-item__name">A letter of introduction</span><span class="pack-item__note">The desk seals it. Do not open it to check the spelling of your own name.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" data-pack>
+              <span class="pack-item__txt"><span class="pack-item__name">A handkerchief</span><span class="pack-item__note">Useful for dust, tears and one specific century that we do not name here.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" data-pack>
+              <span class="pack-item__txt"><span class="pack-item__name">A pencil</span><span class="pack-item__note">Ink is a commitment in most eras, and a confession in two.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" data-pack>
+              <span class="pack-item__txt"><span class="pack-item__name">A name you intend to use</span><span class="pack-item__note">Short, plausible, and yours for the duration. Write it on the inside of the coat.</span></span>
+            </label>
+          </div>
+
+          <div class="pack-group">
+            <div class="pack-group__head"><h3>Leave behind</h3><span>6 items</span></div>
+            <label class="pack-item">
+              <input type="checkbox" data-pack>
+              <span class="pack-item__txt"><span class="pack-item__name">Your phone</span><span class="pack-item__note">Held at the desk, returned with a stamped chit. Complaining upgrades the chit.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" data-pack>
+              <span class="pack-item__txt"><span class="pack-item__name">A smart watch</span><span class="pack-item__note">The century will think it is a wound, and will try to help.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" data-pack>
+              <span class="pack-item__txt"><span class="pack-item__name">A camera</span><span class="pack-item__note">Prohibited in most eras, suspicious in all of them, and useless in 68 million BCE.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" data-pack>
+              <span class="pack-item__txt"><span class="pack-item__name">Modern money</span><span class="pack-item__note">The coins are wrong and the paper is loud. The purse replaces it.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" data-pack>
+              <span class="pack-item__txt"><span class="pack-item__name">Batteries</span><span class="pack-item__note">No era before 1800 can recharge an apology.</span></span>
+            </label>
+            <label class="pack-item">
+              <input type="checkbox" data-pack>
+              <span class="pack-item__txt"><span class="pack-item__name">Opinions about the century</span><span class="pack-item__note">You are a guest. The century has been managing without a review.</span></span>
+            </label>
+          </div>
+
+          <div class="pack-group">
+            <div class="pack-group__head"><h3 data-era-head>Particular to your era</h3><span data-era-count>3 items</span></div>
+            <div data-era-items></div>
+          </div>
+
+          <div class="pack-group">
+            <div class="pack-group__head"><h3>Not permitted in <span data-era-name>that century</span></h3><span>Customs will hold them</span></div>
+            <ul class="notpermitted" data-era-bans style="margin-top:.9rem"></ul>
+          </div>
+        </div>
+
+        <aside class="pack-grid__aside">
+          <div class="pack-progress">
+            <div class="pack-progress__top"><span>Manifest completeness</span><b data-pack-pct>0%</b></div>
+            <div class="bar"><span class="bar__fill" data-pack-bar></span></div>
+            <p class="small" style="margin-top:.9rem" data-pack-note>Nothing checked. The Bureau kit is already at the desk, which is most of it.</p>
+          </div>
+
+          <dl class="deflist">
+            <div class="deflist__row"><dt>Bag</dt><dd>One, Bureau-issued</dd></div>
+            <div class="deflist__row"><dt>Weight</dt><dd>7 kg, including the coat</dd></div>
+            <div class="deflist__row"><dt>Batteries</dt><dd>None, in either direction</dd></div>
+            <div class="deflist__row"><dt>Weather</dt><dd data-pack-climate>34°C · dry, high sun</dd></div>
+            <div class="deflist__row"><dt>Medical</dt><dd>Course begins 14 days prior</dd></div>
+            <div class="deflist__row"><dt>Return chit</dt><dd>On your person, always</dd></div>
+          </dl>
+
+          <div class="stamp" style="align-self:start;transform:rotate(-2.5deg)"><b>Hand luggage only</b>No batteries<br>No exceptions</div>
+
+          <a class="btn btn--solid btn--block" href="booking.html">Apply for a visa <span class="btn__arr">→</span></a>
+          <button type="button" class="btn btn--ghost btn--block" data-print-list>Print this list</button>
+        </aside>
+      </div>
+
+      <figure class="field-note" style="margin-top:clamp(3rem,6vw,5rem)" data-reveal>
+        <p>"The best-dressed traveller in 1605 is the one nobody notices. This is also true in 2041 and 3000, and it is the only fashion advice the Bureau will ever give."</p>
+        <footer><b>M. Okafor</b> — Quartermaster, Corridor 4</footer>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-band" data-reveal>
+        <div>
+          <p class="label label--ox" style="margin-bottom:1rem">Before you zip it</p>
+          <h2>The list is short.<br><em>Read it twice.</em></h2>
+          <p class="small" style="max-width:54ch">Every item above is inspected at the corridor. Anything not on the list is at the discretion of an officer who has heard every explanation, including the good ones.</p>
+        </div>
+        <div class="cta-band__aside">
+          <ul class="deflist" style="border-top-color:var(--rule)">
+            <li class="deflist__row" style="grid-template-columns:1fr auto"><dt style="padding:0">Issued kit</dt><dd class="mono small">5 items</dd></li>
+            <li class="deflist__row" style="grid-template-columns:1fr auto"><dt style="padding:0">Your list</dt><dd class="mono small">12 items + era</dd></li>
+            <li class="deflist__row" style="grid-template-columns:1fr auto"><dt style="padding:0">Allowance</dt><dd class="mono small">7 kg</dd></li>
+            <li class="deflist__row" style="grid-template-columns:1fr auto"><dt style="padding:0">Batteries</dt><dd class="mono small">None</dd></li>
+          </ul>
+          <a class="btn btn--solid btn--block" href="booking.html" style="margin-top:1.4rem">Book a departure <span class="btn__arr">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="site-foot__grid">
+      <div class="site-foot__brand">
+        <a class="brand" href="index.html" aria-label="Temporal Tourism Bureau — home">
+          <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor"/>
+            <circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="1 2.6" opacity=".55"/>
+            <path d="M24 6v5M24 37v5M6 24h5M37 24h5" stroke="currentColor"/>
+            <path d="M18.6 15.6h10.8l-4.4 6.6a1.2 1.2 0 0 0 0 1.4l4.4 6.8H18.6l4.4-6.8a1.2 1.2 0 0 0 0-1.4z" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__text"><b>Temporal Tourism Bureau</b><em>Est. 2087 · Licence TT-0041</em></span>
+        </a>
+        <p>Regulating civilian travel across time since 2087. Twelve corridors, forty-seven eras, one very large filing cabinet.</p>
+      </div>
+      <div>
+        <h4>Travel</h4>
+        <ul>
+          <li><a href="destinations.html">Era index</a></li>
+          <li><a href="booking.html">Book a departure</a></li>
+          <li><a href="packing.html">Packing list</a></li>
+          <li><a href="advisories.html">Travel advisories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The Bureau</h4>
+        <ul>
+          <li><a href="souvenirs.html">Authorised souvenirs</a></li>
+          <li><a href="diaries.html">Traveller diaries</a></li>
+          <li><a href="faq.html">Paradox FAQ</a></li>
+          <li><a href="booking.html">Visa status</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visiting office</h4>
+        <ul>
+          <li>Corridor 4, Level −2</li>
+          <li>Ashoka University, Sonipat</li>
+          <li>Mon–Fri · 09:00–17:00 BST</li>
+        </ul>
+        <p class="label" style="margin-top:1.2rem">Bureau time <b data-clock style="color:var(--ink);letter-spacing:.08em">00:00:00</b></p>
+      </div>
+    </div>
+    <div class="site-foot__bar">
+      <span>© 2087–2104 The Temporal Tourism Bureau</span>
+      <span>All timelines subject to change</span>
+    </div>
+    <p class="credits">Credits — Artwork: original engraved plates generated for this project with AI (ImageGen), art-directed to a single sepia ink palette. Typefaces: <b>Fraunces</b> (Undercase Type), <b>Archivo</b> (Omnibus-Type) and <b>Space Mono</b> (Colophon Foundry), served via Google Fonts under the SIL Open Font License. Seals, stamps and icons drawn in SVG for this entry. This is a fictional bureau; no timelines were harmed.</p>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/packing.js"></script>
+</body>
+</html>
